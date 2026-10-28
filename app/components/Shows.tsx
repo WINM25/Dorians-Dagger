@@ -30,7 +30,7 @@ export default function Shows() {
   }, [open, close, move]);
 
   return (
-    <Section id="shows" title="Ao vivo">
+    <Section id="shows" title="Galeria de Shows">
       <div className="grid grid-cols-2 gap-2 md:grid-cols-3">
         {gallery.map(([src, alt], i) => (
           <button key={src} onClick={() => setOpen(i)} aria-label={`Ampliar: ${alt}`} className="cursor-zoom-in">
